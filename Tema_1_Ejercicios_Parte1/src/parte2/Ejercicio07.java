@@ -21,10 +21,12 @@ public class Ejercicio07 {
 		// Variable que recogera el precio.
 		double precio;
 		
+		// Variable que recoge el precio final.
 		double precioFinal;
 		
 		// Variable que recogera el descuento.
 		final double DESCUENTO = 0.05;
+		
 		// Creamos un nuevo Scanner.
 		Scanner sc = new Scanner (System.in);
 		
@@ -37,7 +39,7 @@ public class Ejercicio07 {
 		
 		precio = (menores * PRECIO_MENOR) + (adultos * PRECIO_ADULTO);
 		
-		precioFinal = precio >= 100 ? precio - (precio *DESCUENTO) : precio;
+		precioFinal = precio >= 100 ? precio - (precio * DESCUENTO) : precio;
 		
 		// Ofrecemos el resultado al usuario.
 		System.out.println("El precio final de sus entradas es de " + precioFinal + " euros.");
